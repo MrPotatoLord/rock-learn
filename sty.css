@@ -1,0 +1,15 @@
+body {
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 10em;
+  background-color: rgb(20, 20, 20);
+  text-align: center;
+}
+button {
+  margin: 0 20px;
+}
+p {
+  font-size: 4em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
