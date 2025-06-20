@@ -1,5 +1,3 @@
-yazı = document.querySelector("p");
-
 function getComputerChoice() {
   let choice = Math.random() * 3;
   if (choice > 2) {
@@ -38,9 +36,8 @@ function playGame() {
     }
     if (condition == "win") humanScore += 1;
     if (condition == "lose") computerScore += 1;
-    yazı.innerText(
-      `${condition}: ${computerChoice} was computer and u ${humanChoice}`,
-    );
+    const yaz = document.querySelector("p");
+    yaz.textContent = `${condition}: ${computerChoice} was computer and u ${humanChoice}`;
   }
 
   playRound(getComputerChoice(), getHumanChoice());
